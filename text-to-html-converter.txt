@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Codebeautify.org Text to HTML Converter</title>
+	</head>
+	<body>
+		<p>
+			<!DOCTYPE html>
+			<html lang="en">
+				<head>
+					<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1.0">
+							<title>Ligal FF Tournament</title>
+							<style> 
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif 
+        } 
+ 
+        body { 
+            background: #070b12; 
+            color: #fff; 
+            min-height: 100vh; 
+            padding-bottom: 80px 
+        } 
+ 
+        button, 
+        input, 
+        select { 
+            font: inherit 
+        } 
+ 
+        button { 
+            cursor: pointer 
+        } 
+ 
+        .hidden { 
+            display: none !important 
+        } 
+ 
+        /* LOGIN */ 
+ 
+        .login { 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px; 
+            background: 
+                radial-gradient(circle at top, #17253c, #070b12) 
+        } 
+ 
+        .loginBox { 
+            width: 100%; 
+            max-width: 430px; 
+            background: #101824; 
+            border: 1px solid #29364b; 
+            border-radius: 20px; 
+            padding: 22px 
+        } 
+ 
+        .logo { 
+            font-size: 29px; 
+            font-weight: 900; 
+            text-align: center; 
+            margin-bottom: 18px 
+        } 
+ 
+        .logo span { 
+            color: #ffb703 
+        } 
+ 
+        input, 
+        select { 
+            width: 100%; 
+            background: #09111d; 
+            border: 1px solid #29364b; 
+            color: #fff; 
+            padding: 12px; 
+            border-radius: 9px; 
+            margin: 6px 0 12px; 
+            outline: none 
+        } 
+ 
+        label { 
+            font-size: 12px; 
+            color: #94a3b8 
+        } 
+ 
+        .btn { 
+            border: 0; 
+            border-radius: 9px; 
+            padding: 11px 14px; 
+            font-weight: bold; 
+            background: linear-gradient(90deg, #ffb703, #fb8500); 
+            color: #111 
+        } 
+ 
+        .btn.full { 
+            width: 100% 
+        } 
+ 
+        .btn.secondary { 
+            background: #263244; 
+            color: #fff 
+        } 
+ 
+        .btn.danger { 
+            background: #991b1b; 
+            color: #fff 
+        } 
+ 
+        .btn.small { 
+            padding: 7px 10px; 
+            font-size: 12px 
+        } 
+ 
+        /* HEADER */ 
+ 
+        header { 
+            position: sticky; 
+            top: 0; 
+            z-index: 20; 
+            background: #0d1420ee; 
+            backdrop-filter: blur(10px); 
+            border-bottom: 1px solid #263244; 
+            padding: 13px 15px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between 
+        } 
+ 
+        .brand { 
+            font-size: 19px; 
+            font-weight: 900 
+        } 
+ 
+        .brand span { 
+            color: #ffb703 
+        } 
+ 
+        .headerUser { 
+            font-size: 11px; 
+            color: #94a3b8; 
+            margin-top: 3px 
+        } 
+ 
+        /* CONTAINER */ 
+ 
+        .container { 
+            max-width: 800px; 
+            margin: auto; 
+            padding: 15px 
+        } 
+ 
+        .page { 
+            display: none 
+        } 
+ 
+        .page.active { 
+            display: block 
+        } 
+ 
+        /* BOTTOM NAV */ 
+ 
+        .bottomNav { 
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            height: 66px; 
+            background: #0c131e; 
+            border-top: 1px solid #263244; 
+            display: flex; 
+            justify-content: space-around; 
+            z-index: 50 
+        } 
+ 
+        .bottomNav button { 
+            flex: 1; 
+            border: 0; 
+            background: none; 
+            color: #7f8da3; 
+            font-size: 11px 
+        } 
+ 
+        .bottomNav button.active { 
+            color: #ffb703 
+        } 
+ 
+        .bottomNav b { 
+            display: block; 
+            font-size: 20px; 
+            margin-bottom: 3px 
+        } 
+ 
+        /* HERO */ 
+ 
+        .hero { 
+            background: 
+                linear-gradient(135deg, #171f30, #0e1521); 
+            border: 1px solid #29364b; 
+            border-radius: 18px; 
+            padding: 20px; 
+            margin-bottom: 15px 
+        } 
+ 
+        .hero h1 { 
+            font-size: 25px; 
+            margin-bottom: 7px 
+        } 
+ 
+        .hero p { 
+            color: #94a3b8; 
+            font-size: 13px; 
+            line-height: 1.5 
+        } 
+ 
+        /* WALLET */ 
+ 
+        .wallet { 
+            background: 
+                linear-gradient(135deg, #ffb703, #fb8500); 
+            color: #111; 
+            border-radius: 18px; 
+            padding: 20px; 
+            margin-bottom: 15px 
+        } 
+ 
+        .wallet small { 
+            font-weight: bold; 
+            opacity: .75 
+        } 
+ 
+        .balance { 
+            font-size: 31px; 
+            font-weight: 900; 
+            margin: 7px 0 15px 
+        } 
+ 
+        .walletBtns { 
+            display: flex; 
+            gap: 8px 
+        } 
+ 
+        .walletBtns button { 
+            flex: 1; 
+            background: #111; 
+            color: #fff; 
+            border: 0; 
+            border-radius: 9px; 
+            padding: 10px 
+        } 
+ 
+        /* CARDS */ 
+ 
+        .card { 
+            background: #101824; 
+            border: 1px solid #243044; 
+            border-radius: 16px; 
+            padding: 15px; 
+            margin-bottom: 13px 
+        } 
+ 
+        .title { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 12px 
+        } 
+ 
+        .title h2 { 
+            font-size: 18px 
+        } 
+ 
+        .muted { 
+            color: #94a3b8 
+        } 
+ 
+        .smallText { 
+            font-size: 12px 
+        } 
+ 
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px 
+        } 
+ 
+        .stat { 
+            background: #0b1220; 
+            border-radius: 13px; 
+            padding: 14px 
+        } 
+ 
+        .stat strong { 
+            display: block; 
+            font-size: 21px; 
+            color: #ffb703; 
+            margin-bottom: 5px 
+        } 
+ 
+        .stat span { 
+            font-size: 11px; 
+            color: #94a3b8 
+        } 
+ 
+        /* TOURNAMENT */ 
+ 
+        .tournament { 
+            background: #101824; 
+            border: 1px solid #263448; 
+            border-radius: 16px; 
+            padding: 15px; 
+            margin-bottom: 12px 
+        } 
+ 
+        .tournamentTop { 
+            display: flex; 
+            justify-content: space-between; 
+            gap: 10px; 
+            margin-bottom: 10px 
+        } 
+ 
+        .tournament h3 { 
+            font-size: 17px 
+        } 
+ 
+        .badge { 
+            display: inline-block; 
+            padding: 5px 8px; 
+            border-radius: 20px; 
+            font-size: 10px; 
+            background: #064e3b; 
+            color: #6ee7b7 
+        } 
+ 
+        .badge.live { 
+            background: #7f1d1d; 
+            color: #fca5a5 
+        } 
+ 
+        .badge.closed { 
+            background: #334155; 
+            color: #cbd5e1 
+        } 
+ 
+        .tInfo { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 7px; 
+            margin: 12px 0 
+        } 
+ 
+        .tInfo div { 
+            background: #0a111d; 
+            padding: 9px; 
+            border-radius: 8px 
+        } 
+ 
+        .tInfo small { 
+            display: block; 
+            font-size: 9px; 
+            color: #94a3b8 
+        } 
+ 
+        .tInfo b { 
+            font-size: 12px 
+        } 
+ 
+        /* MODAL */ 
+ 
+        .modal { 
+            position: fixed; 
+            inset: 0; 
+            z-index: 100; 
+            background: #000c; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 18px 
+        } 
+ 
+        .modalBox { 
+            width: 100%; 
+            max-width: 480px; 
+            max-height: 90vh; 
+            overflow: auto; 
+            background: #101824; 
+            border: 1px solid #29364b; 
+            border-radius: 18px; 
+            padding: 18px 
+        } 
+ 
+        .modalHead { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 15px 
+        } 
+ 
+        .close { 
+            border: 0; 
+            background: none; 
+            color: #fff; 
+            font-size: 27px 
+        } 
+ 
+        /* LIST */ 
+ 
+        .item { 
+            padding: 12px 0; 
+            border-bottom: 1px solid #202b3d 
+        } 
+ 
+        .item:last-child { 
+            border-bottom: 0 
+        } 
+ 
+        .itemRow { 
+            display: flex; 
+            justify-content: space-between; 
+            gap: 10px; 
+            align-items: center 
+        } 
+ 
+        /* TOAST */ 
+ 
+        .toast { 
+            display: none; 
+            position: fixed; 
+            bottom: 80px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            background: #111827; 
+            border: 1px solid #34445d; 
+            padding: 11px 16px; 
+            border-radius: 10px; 
+            z-index: 200; 
+            font-size: 13px 
+        } 
+ 
+        .empty { 
+            text-align: center; 
+            padding: 25px 10px; 
+            color: #94a3b8; 
+            font-size: 13px 
+        } 
+ 
+        @media(max-width:500px) { 
+ 
+            .tInfo { 
+                grid-template-columns: repeat(3, 1fr) 
+            } 
+ 
+            .hero h1 { 
+                font-size: 22px 
+            } 
+ 
+        } 
+    </style>
+						</head>
+						<body>
+							<!-- ================= LOGIN ================= -->
+							<div id="loginScreen" class="login">
+								<div class="loginBox">
+									<div class="logo"> 
+                Ligal 
+										<span>FF Tournament</span>
+									</div>
+									<p class="muted" style="text-align:center;font-size:12px;margin-bottom:17px"> 
+                Free Fire Tournament Platform 
+            </p>
+									<div id="loginForm">
+										<label>Email</label>
+										<input id="loginEmail" type="email" placeholder="Enter email">
+											<label>Password</label>
+											<input id="loginPassword" type="password" placeholder="Enter password">
+												<button class="btn full" onclick="loginUser()"> 
+                    LOGIN 
+                </button>
+												<p style="text-align:center;margin:14px 0;color:#94a3b8;font-size:12px"> 
+                    Don't have an account? 
+                </p>
+												<button class="btn secondary full" onclick="showRegister()"> 
+                    CREATE ACCOUNT 
+                </button>
+											</div>
+											<div id="registerForm" class="hidden">
+												<label>Name</label>
+												<input id="registerName" placeholder="Your name">
+													<label>Free Fire ID</label>
+													<input id="registerFFID" placeholder="Free Fire UID">
+														<label>Email</label>
+														<input id="registerEmail" type="email" placeholder="Email">
+															<label>Password</label>
+															<input id="registerPassword" type="password" placeholder="Minimum 6 characters">
+																<button class="btn full" onclick="registerUser()"> 
+                    REGISTER 
+                </button>
+																<button class="btn secondary full" style="margin-top:8px" onclick="showLogin()"> 
+                    BACK TO LOGIN 
+                </button>
+															</div>
+															<p id="authMessage" class="muted" style="font-size:12px;margin-top:12px"></p>
+														</div>
+													</div>
+													<!-- ================= APP ================= -->
+													<div id="app" class="hidden">
+														<header>
+															<div>
+																<div class="brand"> 
+                    Ligal 
+																	<span>FF Tournament</span>
+																</div>
+																<div id="headerName" class="headerUser"> 
+                    Player 
+                </div>
+															</div>
+															<button class="btn secondary small" onclick="logout()"> 
+                Logout 
+            </button>
+														</header>
+														<div class="container">
+															<!-- ================= HOME ================= -->
+															<section id="home" class="page active">
+																<div class="hero">
+																	<h1> 
+                        🔥 Welcome to Ligal FF 
+                    </h1>
+																	<p> 
+                        Compete in Free Fire tournaments, 
+                        join battles and win exciting prizes. 
+                    </p>
+																</div>
+																<div class="wallet">
+																	<small> 
+                        AVAILABLE BALANCE 
+                    </small>
+																	<div id="homeBalance" class="balance"> 
+                        Rs. 0 
+                    </div>
+																	<div class="walletBtns">
+																		<button onclick="openMoney('deposit')"> 
+                            📥 Deposit 
+                        </button>
+																		<button onclick="openMoney('withdrawal')"> 
+                            📤 Withdraw 
+                        </button>
+																	</div>
+																</div>
+																<div class="grid">
+																	<div class="stat">
+																		<strong id="homeGames"> 
+                            0 
+                        </strong>
+																		<span> 
+                            Joined Games 
+                        </span>
+																	</div>
+																	<div class="stat">
+																		<strong id="homeWins"> 
+                            0 
+                        </strong>
+																		<span> 
+                            Wins 
+                        </span>
+																	</div>
+																	<div class="stat">
+																		<strong id="homePrize"> 
+                            Rs. 0 
+                        </strong>
+																		<span> 
+                            Prize Won 
+                        </span>
+																	</div>
+																	<div class="stat">
+																		<strong id="homeRank"> 
+                            - 
+                        </strong>
+																		<span> 
+                            Player Rank 
+                        </span>
+																	</div>
+																</div>
+																<div class="title" style="margin-top:18px">
+																	<h2> 
+                        🔥 Upcoming 
+                    </h2>
+																	<button class="btn small" onclick="showPage('tournaments')"> 
+                        View All 
+                    </button>
+																</div>
+																<div id="homeTournaments"></div>
+															</section>
+															<!-- ================= TOURNAMENTS ================= -->
+															<section id="tournaments" class="page">
+																<div class="title">
+																	<h2> 
+                        🏆 Tournaments 
+                    </h2>
+																</div>
+																<div id="tournamentList"></div>
+															</section>
+															<!-- ================= MY GAMES ================= -->
+															<section id="games" class="page">
+																<div class="title">
+																	<h2> 
+                        🎮 My Games 
+                    </h2>
+																</div>
+																<div id="myGames"></div>
+															</section>
+															<!-- ================= WALLET ================= -->
+															<section id="wallet" class="page">
+																<div class="title">
+																	<h2> 
+                        💰 Wallet 
+                    </h2>
+																</div>
+																<div class="wallet">
+																	<small> 
+                        WALLET BALANCE 
+                    </small>
+																	<div id="walletBalance" class="balance"> 
+                        Rs. 0 
+                    </div>
+																	<div class="walletBtns">
+																		<button onclick="openMoney('deposit')"> 
+                            📥 Deposit 
+                        </button>
+																		<button onclick="openMoney('withdrawal')"> 
+                            📤 Withdraw 
+                        </button>
+																	</div>
+																</div>
+																<div class="title">
+																	<h2> 
+                        Transaction History 
+                    </h2>
+																</div>
+																<div class="card" id="transactions"></div>
+															</section>
+															<!-- ================= PROFILE ================= -->
+															<section id="profile" class="page">
+																<div class="title">
+																	<h2> 
+                        👤 Profile 
+                    </h2>
+																</div>
+																<div class="card">
+																	<label>Name</label>
+																	<input id="profileName">
+																		<label>Free Fire ID</label>
+																		<input id="profileFFID">
+																			<label>Email</label>
+																			<input id="profileEmail" readonly>
+																				<button class="btn full" onclick="saveProfile()"> 
+                        SAVE PROFILE 
+                    </button>
+																			</div>
+																			<div class="card">
+																				<div class="item">
+																					<div class="itemRow">
+																						<span> 
+                                🏆 Total Wins 
+                            </span>
+																						<b id="profileWins"> 
+                                0 
+                            </b>
+																					</div>
+																				</div>
+																				<div class="item">
+																					<div class="itemRow">
+																						<span> 
+                                💰 Prize Won 
+                            </span>
+																						<b id="profilePrize"> 
+                                Rs. 0 
+                            </b>
+																					</div>
+																				</div>
+																				<div class="item">
+																					<div class="itemRow">
+																						<span> 
+                                🎮 Joined Games 
+                            </span>
+																						<b id="profileGames"> 
+                                0 
+                            </b>
+																					</div>
+																				</div>
+																			</div>
+																		</section>
+																	</div>
+																	<!-- ================= BOTTOM NAV ================= -->
+																	<nav class="bottomNav">
+																		<button class="active" data-page="home" onclick="showPage('home')">
+																			<b>🏠</b> 
+                Home 
+ 
+            
+																		</button>
+																		<button data-page="tournaments" onclick="showPage('tournaments')">
+																			<b>🏆</b> 
+                Tournaments 
+ 
+            
+																		</button>
+																		<button data-page="games" onclick="showPage('games')">
+																			<b>🎮</b> 
+                My Games 
+ 
+            
+																		</button>
+																		<button data-page="wallet" onclick="showPage('wallet')">
+																			<b>💰</b> 
+                Wallet 
+ 
+            
+																		</button>
+																		<button data-page="profile" onclick="showPage('profile')">
+																			<b>👤</b> 
+                Profile 
+ 
+            
+																		</button>
+																	</nav>
+																</div>
+																<!-- ================= JOIN MODAL ================= -->
+																<div id="joinModal" class="modal hidden">
+																	<div class="modalBox">
+																		<div class="modalHead">
+																			<h2> 
+                    🎮 Join Tournament 
+                </h2>
+																			<button class="close" onclick="closeModal('joinModal')"> 
+                    × 
+                </button>
+																		</div>
+																		<div id="joinInfo" class="card"></div>
+																		<input id="joinTournamentId" type="hidden">
+																			<button class="btn full" onclick="joinTournament()"> 
+                CONFIRM JOIN 
+            </button>
+																		</div>
+																	</div>
+																	<!-- ================= MONEY MODAL ================= -->
+																	<div id="moneyModal" class="modal hidden">
+																		<div class="modalBox">
+																			<div class="modalHead">
+																				<h2 id="moneyTitle"> 
+                    💰 Wallet 
+                </h2>
+																				<button class="close" onclick="closeModal('moneyModal')"> 
+                    × 
+                </button>
+																			</div>
+																			<input id="moneyType" type="hidden">
+																				<label> 
+                Amount 
+            </label>
+																				<input id="moneyAmount" type="number" min="1" placeholder="Enter amount">
+																					<label> 
+                Reference / Transaction ID 
+            </label>
+																					<input id="moneyReference" placeholder="Transaction reference">
+																						<p class="muted" style="font-size:11px;margin-bottom:12px"> 
+                For deposit, enter your payment transaction reference. 
+                For withdrawal, enter the required withdrawal details. 
+            </p>
+																						<button class="btn full" onclick="submitMoney()"> 
+                SUBMIT REQUEST 
+            </button>
+																					</div>
+																				</div>
+																				<div id="toast" class="toast"></div>
+																				<!-- ================= FIREBASE ================= -->
+																				<script type="module"> 
+        import { 
+            initializeApp 
+        } 
+        from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"; 
+ 
+        import { 
+            getAuth, 
+            createUserWithEmailAndPassword, 
+            signInWithEmailAndPassword, 
+            onAuthStateChanged, 
+            signOut 
+        } 
+        from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"; 
+ 
+        import { 
+            getDatabase, 
+            ref, 
+            get, 
+            set, 
+            update, 
+            push, 
+            onValue 
+        } 
+        from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"; 
+ 
+ 
+        /* FIREBASE CONFIG */ 
+ 
+        const firebaseConfig = { 
+ 
+            apiKey: "AIzaSyBJ-n3c7geZgRnIOKQR4ESmJ1wzzKSIHdE", 
+ 
+            authDomain: "tp-gaming-f597a.firebaseapp.com", 
+ 
+            databaseURL: "https://tp-gaming-f597a-default-rtdb.firebaseio.com", 
+ 
+            projectId: "tp-gaming-f597a", 
+ 
+            storageBucket: "tp-gaming-f597a.firebasestorage.app", 
+ 
+            messagingSenderId: "509338276371", 
+ 
+            appId: "1:509338276371:web:391d224951c7e1028965e6" 
+ 
+        }; 
+ 
+ 
+        const app = 
+            initializeApp(firebaseConfig); 
+ 
+        const auth = 
+            getAuth(app); 
+ 
+        const db = 
+            getDatabase(app); 
+ 
+ 
+        let currentUser = null; 
+ 
+        let userData = {}; 
+ 
+        let tournaments = {}; 
+ 
+        let joins = {}; 
+ 
+        let moneyRequests = {}; 
+ 
+        let results = {}; 
+ 
+ 
+        /* HELPERS */ 
+ 
+        const $ = 
+            id => document.getElementById(id); 
+ 
+ 
+        function esc(value) { 
+ 
+            return String(value ?? "") 
+                .replace(/[&<>"']/g, c => ({ 
+ 
+                    "&": "&amp;", 
+                    "<": "&lt;", 
+                    ">": "&gt;", 
+                    '"': "&quot;", 
+                    "'": "&#039;" 
+ 
+                } [c])); 
+ 
+        } 
+ 
+ 
+        function toast(message) { 
+ 
+            $("toast").textContent = 
+                message; 
+ 
+            $("toast").style.display = 
+                "block"; 
+ 
+            setTimeout(() => { 
+ 
+                $("toast").style.display = 
+                    "none"; 
+ 
+            }, 2500); 
+ 
+        } 
+ 
+ 
+        /* LOGIN / REGISTER */ 
+ 
+        window.showRegister = function() { 
+ 
+            $("loginForm") 
+                .classList.add("hidden"); 
+ 
+            $("registerForm") 
+                .classList.remove("hidden"); 
+ 
+            $("authMessage").textContent = ""; 
+ 
+        }; 
+ 
+ 
+        window.showLogin = function() { 
+ 
+            $("registerForm") 
+                .classList.add("hidden"); 
+ 
+            $("loginForm") 
+                .classList.remove("hidden"); 
+ 
+            $("authMessage").textContent = ""; 
+ 
+        }; 
+ 
+ 
+        window.registerUser = async function() { 
+ 
+            const name = 
+                $("registerName").value.trim(); 
+ 
+            const ffid = 
+                $("registerFFID").value.trim(); 
+ 
+            const email = 
+                $("registerEmail").value.trim(); 
+ 
+            const password = 
+                $("registerPassword").value; 
+ 
+ 
+            if (!name || !ffid || !email || password.length < 6) { 
+ 
+                $("authMessage").textContent = 
+                    "सबै details भर्नुहोस्। Password कम्तीमा 6 characters हुनुपर्छ।"; 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            try { 
+ 
+                const result = 
+                    await createUserWithEmailAndPassword( 
+                        auth, 
+                        email, 
+                        password 
+                    ); 
+ 
+                const uid = 
+                    result.user.uid; 
+ 
+ 
+                await set( 
+                    ref(db, "users/" + uid), { 
+ 
+                        uid: uid, 
+ 
+                        name: name, 
+ 
+                        ffid: ffid, 
+ 
+                        email: email, 
+ 
+                        balance: 0, 
+ 
+                        wins: 0, 
+ 
+                        prizeWon: 0, 
+ 
+                        joinedCount: 0, 
+ 
+                        createdAt: Date.now() 
+ 
+                    } 
+                ); 
+ 
+ 
+                toast("Account created!"); 
+ 
+            } catch (error) { 
+ 
+                $("authMessage").textContent = 
+                    error.message; 
+ 
+            } 
+ 
+        }; 
+ 
+ 
+        window.loginUser = async function() { 
+ 
+            const email = 
+                $("loginEmail").value.trim(); 
+ 
+            const password = 
+                $("loginPassword").value; 
+ 
+ 
+            if (!email || !password) { 
+ 
+                $("authMessage").textContent = 
+                    "Email र password भर्नुहोस्।"; 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            try { 
+ 
+                await signInWithEmailAndPassword( 
+                    auth, 
+                    email, 
+                    password 
+                ); 
+ 
+                $("authMessage").textContent = ""; 
+ 
+            } catch (error) { 
+ 
+                $("authMessage").textContent = 
+                    error.message; 
+ 
+            } 
+ 
+        }; 
+ 
+ 
+        window.logout = function() { 
+ 
+            signOut(auth); 
+ 
+        }; 
+ 
+ 
+        /* AUTH STATE */ 
+ 
+        onAuthStateChanged( 
+            auth, 
+            async user => { 
+ 
+                if (!user) { 
+ 
+                    currentUser = null; 
+ 
+                    $("loginScreen") 
+                        .classList.remove("hidden"); 
+ 
+                    $("app") 
+                        .classList.add("hidden"); 
+ 
+                    return; 
+ 
+                } 
+ 
+ 
+                currentUser = user; 
+ 
+                $("loginScreen") 
+                    .classList.add("hidden"); 
+ 
+                $("app") 
+                    .classList.remove("hidden"); 
+ 
+                await loadUser(); 
+ 
+                startListeners(); 
+ 
+            }); 
+ 
+ 
+        /* LOAD USER */ 
+ 
+        async function loadUser() { 
+ 
+            const snapshot = 
+                await get( 
+                    ref(db, "users/" + currentUser.uid) 
+                ); 
+ 
+            if (snapshot.exists()) { 
+ 
+                userData = 
+                    snapshot.val(); 
+ 
+            } else { 
+ 
+                userData = { 
+ 
+                    uid: currentUser.uid, 
+ 
+                    name: currentUser.email.split("@")[0], 
+ 
+                    email: currentUser.email, 
+ 
+                    ffid: "", 
+ 
+                    balance: 0, 
+ 
+                    wins: 0, 
+ 
+                    prizeWon: 0, 
+ 
+                    joinedCount: 0 
+ 
+                }; 
+ 
+                await set( 
+                    ref( 
+                        db, 
+                        "users/" + currentUser.uid 
+                    ), 
+                    userData 
+                ); 
+ 
+            } 
+ 
+            renderProfile(); 
+            updateDashboard(); 
+ 
+        } 
+ 
+ 
+        /* REALTIME LISTENERS */ 
+ 
+        function startListeners() { 
+ 
+            onValue( 
+                ref(db, "tournaments"), 
+                snapshot => { 
+ 
+                    tournaments = 
+                        snapshot.val() || {}; 
+ 
+                    renderTournaments(); 
+ 
+                    renderHomeTournaments(); 
+ 
+                }); 
+ 
+ 
+            onValue( 
+                ref(db, "joinRequests"), 
+                snapshot => { 
+ 
+                    joins = 
+                        snapshot.val() || {}; 
+ 
+                    renderMyGames(); 
+ 
+                    updateDashboard(); 
+ 
+                }); 
+ 
+ 
+            onValue( 
+                ref(db, "moneyRequests"), 
+                snapshot => { 
+ 
+                    moneyRequests = 
+                        snapshot.val() || {}; 
+ 
+                    renderTransactions(); 
+ 
+                }); 
+ 
+ 
+            onValue( 
+                ref(db, "results"), 
+                snapshot => { 
+ 
+                    results = 
+                        snapshot.val() || {}; 
+ 
+                    renderMyResults(); 
+ 
+                }); 
+ 
+        } 
+ 
+ 
+        /* PAGE NAVIGATION */ 
+ 
+        window.showPage = function(page) { 
+ 
+            document 
+                .querySelectorAll(".page") 
+                .forEach( 
+                    x => x.classList.remove("active") 
+                ); 
+ 
+            $(page) 
+                .classList.add("active"); 
+ 
+ 
+            document 
+                .querySelectorAll(".bottomNav button") 
+                .forEach( 
+                    x => 
+                    x.classList.toggle( 
+                        "active", 
+                        x.dataset.page === page 
+                    ) 
+                ); 
+ 
+        }; 
+ 
+ 
+        /* DASHBOARD */ 
+ 
+        function updateDashboard() { 
+ 
+            const balance = 
+                Number(userData.balance || 0); 
+ 
+            $("homeBalance").textContent = 
+                "Rs. " + balance; 
+ 
+            $("walletBalance").textContent = 
+                "Rs. " + balance; 
+ 
+            $("homeWins").textContent = 
+                Number(userData.wins || 0); 
+ 
+            $("homePrize").textContent = 
+                "Rs. " + Number(userData.prizeWon || 0); 
+ 
+            $("homeGames").textContent = 
+                Number(userData.joinedCount || 0); 
+ 
+            $("headerName").textContent = 
+                userData.name || 
+                currentUser?.email || 
+                "Player"; 
+ 
+        } 
+ 
+ 
+        /* TOURNAMENT CARD */ 
+ 
+        function tournamentHTML(id, t) { 
+ 
+            const status = 
+                t.status || "upcoming"; 
+ 
+            const joined = 
+                Object.values(joins) 
+                .some( 
+                    x => 
+                    x.uid === currentUser.uid && 
+                    x.tournamentId === id && 
+                    x.status !== "rejected" 
+                ); 
+ 
+ 
+            let action = ""; 
+ 
+            if (status === "upcoming" && !joined) { 
+ 
+                action = ` 
+ 
+
+																					<button 
+class="btn full" 
+onclick="openJoin('${id}')" 
+> 
+🎮 JOIN TOURNAMENT 
+</button> 
+ 
+`; 
+ 
+            } else if (joined) { 
+ 
+                action = ` 
+ 
+
+																					<button 
+class="btn secondary full" 
+disabled 
+> 
+✓ ALREADY JOINED 
+</button> 
+ 
+`; 
+ 
+            } else { 
+ 
+                action = ` 
+ 
+
+																					<button 
+class="btn secondary full" 
+disabled 
+> 
+${status==="live"?"🔴 LIVE":"CLOSED"} 
+</button> 
+ 
+`; 
+ 
+            } 
+ 
+ 
+            return ` 
+ 
+
+																					<div class="tournament">
+																						<div class="tournamentTop">
+																							<div>
+																								<h3> 
+${esc(t.name)} 
+</h3>
+																								<p class="muted smallText"> 
+${esc(t.description||"Free Fire Tournament")} 
+</p>
+																							</div>
+																							<span class="badge 
+${status==="live"?"live":""} 
+${status==="closed"||status==="completed"?"closed":""} 
+"> 
+ 
+${esc(status)} 
+ 
+</span>
+																						</div>
+																						<div class="tInfo">
+																							<div>
+																								<small>ENTRY</small>
+																								<b> 
+Rs. ${Number(t.entryFee||0)} 
+</b>
+																							</div>
+																							<div>
+																								<small>PRIZE</small>
+																								<b> 
+Rs. ${Number(t.prize||0)} 
+</b>
+																							</div>
+																							<div>
+																								<small>PLAYERS</small>
+																								<b> 
+${Number(t.maxPlayers||0)} 
+</b>
+																							</div>
+																						</div>
+																						<div 
+class="muted smallText" 
+style="margin-bottom:10px" 
+> 
+🕐 ${esc(t.startTime||"Time not set")} 
+</div> 
+ 
+${action} 
+ 
+
+																					</div> 
+ 
+`; 
+ 
+        } 
+ 
+ 
+        /* TOURNAMENTS */ 
+ 
+        function renderTournaments() { 
+ 
+            const data = 
+                Object.entries(tournaments); 
+ 
+            if (!data.length) { 
+ 
+                $("tournamentList").innerHTML = 
+                    `
+																					<div class="card empty"> 
+No tournaments available. 
+</div>`; 
+ 
+                return; 
+ 
+            } 
+ 
+            $("tournamentList").innerHTML = 
+                data 
+                .map(([id, t]) => 
+                    tournamentHTML(id, t) 
+                ) 
+                .join(""); 
+ 
+        } 
+ 
+ 
+        /* HOME TOURNAMENTS */ 
+ 
+        function renderHomeTournaments() { 
+ 
+            const data = 
+                Object.entries(tournaments) 
+                .filter( 
+                    ([id, t]) => 
+                    t.status === "upcoming" 
+                ) 
+                .slice(0, 3); 
+ 
+            if (!data.length) { 
+ 
+                $("homeTournaments").innerHTML = 
+                    `
+																					<div class="card empty"> 
+No upcoming tournaments. 
+</div>`; 
+ 
+                return; 
+ 
+            } 
+ 
+            $("homeTournaments").innerHTML = 
+                data 
+                .map(([id, t]) => 
+                    tournamentHTML(id, t) 
+                ) 
+                .join(""); 
+ 
+        } 
+ 
+ 
+        /* JOIN */ 
+ 
+        window.openJoin = function(id) { 
+ 
+            const t = 
+                tournaments[id]; 
+ 
+            if (!t) return; 
+ 
+ 
+            $("joinTournamentId").value = id; 
+ 
+            $("joinInfo").innerHTML = ` 
+ 
+
+																					<h3> 
+${esc(t.name)} 
+</h3>
+																					<div 
+class="item" 
+style="margin-top:10px" 
+>
+																						<div class="itemRow">
+																							<span> 
+Entry Fee 
+</span>
+																							<b> 
+Rs. ${Number(t.entryFee||0)} 
+</b>
+																						</div>
+																					</div>
+																					<div class="item">
+																						<div class="itemRow">
+																							<span> 
+Prize 
+</span>
+																							<b> 
+Rs. ${Number(t.prize||0)} 
+</b>
+																						</div>
+																					</div>
+																					<div class="item">
+																						<div class="itemRow">
+																							<span> 
+Your Balance 
+</span>
+																							<b> 
+Rs. ${Number(userData.balance||0)} 
+</b>
+																						</div>
+																					</div> 
+ 
+`; 
+ 
+            $("joinModal") 
+                .classList.remove("hidden"); 
+ 
+        }; 
+ 
+ 
+        window.joinTournament = async function() { 
+ 
+            const id = 
+                $("joinTournamentId").value; 
+ 
+            const t = 
+                tournaments[id]; 
+ 
+            if (!t) return; 
+ 
+ 
+            const fee = 
+                Number(t.entryFee || 0); 
+ 
+            const balance = 
+                Number(userData.balance || 0); 
+ 
+ 
+            if (balance < fee) { 
+ 
+                toast("Insufficient balance."); 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            /* CHECK DUPLICATE */ 
+ 
+            const already = 
+                Object.values(joins) 
+                .some( 
+                    x => 
+                    x.uid === currentUser.uid && 
+                    x.tournamentId === id && 
+                    x.status !== "rejected" 
+                ); 
+ 
+ 
+            if (already) { 
+ 
+                toast("You already joined."); 
+ 
+                closeModal("joinModal"); 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            /* DEDUCT ENTRY */ 
+ 
+            const newBalance = 
+                balance - fee; 
+ 
+            await set( 
+                ref( 
+                    db, 
+                    "users/" + currentUser.uid + "/balance" 
+                ), 
+                newBalance 
+            ); 
+ 
+ 
+            /* CREATE JOIN REQUEST */ 
+ 
+            const joinRef = 
+                push( 
+                    ref(db, "joinRequests") 
+                ); 
+ 
+ 
+            await set( 
+                joinRef, { 
+ 
+                    uid: currentUser.uid, 
+ 
+                    playerName: userData.name, 
+ 
+                    email: currentUser.email, 
+ 
+                    ffid: userData.ffid, 
+ 
+                    tournamentId: id, 
+ 
+                    tournamentName: t.name, 
+ 
+                    entryFee: fee, 
+ 
+                    status: "pending", 
+ 
+                    createdAt: Date.now() 
+ 
+                } 
+            ); 
+ 
+ 
+            /* UPDATE COUNT */ 
+ 
+            await set( 
+                ref( 
+                    db, 
+                    "users/" + currentUser.uid + "/joinedCount" 
+                ), 
+                Number(userData.joinedCount || 0) + 1 
+            ); 
+ 
+ 
+            userData.balance = 
+                newBalance; 
+ 
+            userData.joinedCount = 
+                Number(userData.joinedCount || 0) + 1; 
+ 
+            updateDashboard(); 
+ 
+            toast("Tournament joined!"); 
+ 
+            closeModal("joinModal"); 
+ 
+        }; 
+ 
+ 
+        /* MY GAMES */ 
+ 
+        function renderMyGames() { 
+ 
+            const data = 
+                Object.values(joins) 
+                .filter( 
+                    x => 
+                    x.uid === currentUser?.uid 
+                ) 
+                .sort( 
+                    (a, b) => 
+                    (b.createdAt || 0) - 
+                    (a.createdAt || 0) 
+                ); 
+ 
+ 
+            if (!data.length) { 
+ 
+                $("myGames").innerHTML = 
+                    `
+																					<div class="card empty"> 
+You haven't joined any tournament. 
+</div>`; 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            $("myGames").innerHTML = 
+                data.map( 
+                    x => ` 
+ 
+
+																					<div class="card">
+																						<div class="title">
+																							<h3> 
+🎮 ${esc(x.tournamentName)} 
+</h3>
+																							<span class="badge 
+${x.status==="pending"?"pending":""} 
+${x.status==="rejected"?"rejected":""} 
+"> 
+ 
+${esc(x.status)} 
+ 
+</span>
+																						</div>
+																						<div class="item">
+																							<div class="itemRow">
+																								<span> 
+Free Fire ID 
+</span>
+																								<b> 
+${esc(x.ffid)} 
+</b>
+																							</div>
+																						</div>
+																						<div class="item">
+																							<div class="itemRow">
+																								<span> 
+Entry Fee 
+</span>
+																								<b> 
+Rs. ${Number(x.entryFee||0)} 
+</b>
+																							</div>
+																						</div>
+																						<div class="item">
+																							<div class="itemRow">
+																								<span> 
+Joined 
+</span>
+																								<span class="muted"> 
+${x.createdAt 
+?new Date(x.createdAt) 
+.toLocaleString() 
+:"-"} 
+</span>
+																							</div>
+																						</div>
+																					</div> 
+ 
+` 
+                ).join(""); 
+ 
+        } 
+ 
+ 
+        /* MONEY */ 
+ 
+        window.openMoney = function(type) { 
+ 
+            $("moneyType").value = type; 
+ 
+            $("moneyAmount").value = ""; 
+ 
+            $("moneyReference").value = ""; 
+ 
+            $("moneyTitle").textContent = 
+                type === "deposit" ? 
+                "📥 Deposit" : 
+                "📤 Withdrawal"; 
+ 
+            $("moneyModal") 
+                .classList.remove("hidden"); 
+ 
+        }; 
+ 
+ 
+        window.submitMoney = async function() { 
+ 
+            const type = 
+                $("moneyType").value; 
+ 
+            const amount = 
+                Number($("moneyAmount").value); 
+ 
+            const reference = 
+                $("moneyReference").value.trim(); 
+ 
+ 
+            if (!amount || amount <= 0) { 
+ 
+                toast("Enter valid amount."); 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            if (!reference) { 
+ 
+                toast("Reference required."); 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            /* WITHDRAWAL BALANCE CHECK */ 
+ 
+            if ( 
+                type === "withdrawal" && 
+                amount > Number(userData.balance || 0) 
+            ) { 
+ 
+                toast("Insufficient balance."); 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            const request = 
+                push( 
+                    ref(db, "moneyRequests") 
+                ); 
+ 
+ 
+            await set( 
+                request, { 
+ 
+                    uid: currentUser.uid, 
+ 
+                    email: currentUser.email, 
+ 
+                    name: userData.name, 
+ 
+                    type: type, 
+ 
+                    amount: amount, 
+ 
+                    reference: reference, 
+ 
+                    status: "pending", 
+ 
+                    createdAt: Date.now() 
+ 
+                } 
+            ); 
+ 
+ 
+            toast( 
+                type === "deposit" ? 
+                "Deposit request submitted." : 
+                "Withdrawal request submitted." 
+            ); 
+ 
+            closeModal("moneyModal"); 
+ 
+        }; 
+ 
+ 
+        /* TRANSACTIONS */ 
+ 
+        function renderTransactions() { 
+ 
+            const data = 
+                Object.values(moneyRequests) 
+                .filter( 
+                    x => 
+                    x.uid === currentUser?.uid 
+                ) 
+                .sort( 
+                    (a, b) => 
+                    (b.createdAt || 0) - 
+                    (a.createdAt || 0) 
+                ); 
+ 
+ 
+            if (!data.length) { 
+ 
+                $("transactions").innerHTML = 
+                    `
+																					<div class="empty"> 
+No transactions yet. 
+</div>`; 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            $("transactions").innerHTML = 
+                data.map( 
+                    x => ` 
+ 
+
+																					<div class="item">
+																						<div class="itemRow">
+																							<div>
+																								<b> 
+${x.type==="deposit" 
+?"📥 Deposit" 
+:"📤 Withdrawal"} 
+</b>
+																								<div 
+class="muted" 
+style="font-size:10px;margin-top:4px" 
+> 
+${x.createdAt 
+?new Date(x.createdAt) 
+.toLocaleString() 
+:""} 
+</div>
+																							</div>
+																							<div style="text-align:right">
+																								<b> 
+Rs. ${Number(x.amount||0)} 
+</b>
+																								<div 
+class="muted" 
+style="font-size:10px" 
+> 
+${esc(x.status)} 
+</div>
+																							</div>
+																						</div>
+																					</div> 
+ 
+` 
+                ).join(""); 
+ 
+        } 
+ 
+ 
+        /* PROFILE */ 
+ 
+        function renderProfile() { 
+ 
+            $("profileName").value = 
+                userData.name || ""; 
+ 
+            $("profileFFID").value = 
+                userData.ffid || ""; 
+ 
+            $("profileEmail").value = 
+                currentUser.email || ""; 
+ 
+            $("profileWins").textContent = 
+                Number(userData.wins || 0); 
+ 
+            $("profilePrize").textContent = 
+                "Rs. " + Number(userData.prizeWon || 0); 
+ 
+            $("profileGames").textContent = 
+                Number(userData.joinedCount || 0); 
+ 
+            updateDashboard(); 
+ 
+        } 
+ 
+ 
+        window.saveProfile = async function() { 
+ 
+            const name = 
+                $("profileName").value.trim(); 
+ 
+            const ffid = 
+                $("profileFFID").value.trim(); 
+ 
+ 
+            if (!name || !ffid) { 
+ 
+                toast("Name and FF ID required."); 
+ 
+                return; 
+ 
+            } 
+ 
+ 
+            await update( 
+                ref(db, "users/" + currentUser.uid), { 
+ 
+                    name: name, 
+                    ffid: ffid, 
+                    updatedAt: Date.now() 
+ 
+                } 
+            ); 
+ 
+ 
+            userData.name = name; 
+            userData.ffid = ffid; 
+ 
+            renderProfile(); 
+ 
+            toast("Profile saved."); 
+ 
+        }; 
+ 
+ 
+        /* RESULTS */ 
+ 
+        function renderMyResults() { 
+ 
+            const data = 
+                Object.values(results) 
+                .filter( 
+                    x => 
+                    x.uid === currentUser?.uid 
+                ); 
+ 
+ 
+            if (!data.length) return; 
+ 
+ 
+            /* Add results to My Games */ 
+ 
+        } 
+ 
+ 
+        /* MODAL */ 
+ 
+        window.closeModal = function(id) { 
+ 
+            $(id).classList.add("hidden"); 
+ 
+        }; 
+    
+																				</script>
+																			</body>
+																		</html>()
+																	</p>
+																</body>
+															</html>
